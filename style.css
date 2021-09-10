@@ -1,0 +1,266 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+:root {
+    --primary: #14BEC8;
+    --background: #F1F6F7;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar-toggler{
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    background-color: var(--primary);
+}
+
+.navbar-toggler::before{
+    content: " MENU";
+}
+
+
+/* header */
+
+.section1{
+    background-color: #F1F6F7;
+    height: fit-content;
+}
+
+.section1 .nav-link a{
+    color: grey;
+}
+
+
+.section1 .nav-span a{
+    color: var(--primary);
+}
+
+
+.section2 .btn{
+    background-color: var(--background);
+    padding: 8px 15px;
+    color: grey;
+    font-weight: 400;
+}
+
+.section2 .btn2{
+    background-color: #14BEC8;
+    color: white;
+}
+
+
+
+.mydropdowncss:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+    border: none;
+ }
+ 
+ .dropdown-img{
+     width: 30px;
+     height: auto;
+ }
+
+ .section3 .form-group{
+     position: relative;
+ }
+ 
+ .section3 .nav-link a{
+    color: black;
+    font-weight: 500;
+}
+
+.section3 .nav-link a:hover{
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.section3 form input{
+    border: 2px solid grey;
+    padding: 5px 10px;
+}
+
+.section3 form .btn{
+    margin-left: -5px;
+    margin-top: -5px;
+    color: grey;
+    background-color: var(--background);
+}
+
+
+.latest-header, .best-sellers-header, .manufacturers-header, .welcome{
+    border-left: 3px solid var(--primary);
+    padding-left: 5px;
+}
+
+
+.latest-btn, .best-sellers-btn, .manufacturers-btn{
+    margin-left: 5px;
+    padding: 0 10px;
+    height: 40px;
+    background-color: var(--background);
+}
+
+.latest-btn:hover, .best-sellers-btn:hover, .manufacturers-btn:hover{
+    color: white;
+    background-color: var(--primary);
+}
+
+.fig-text{
+    text-align: center;
+    width: 80%;
+}
+
+.section6 .latest-imgs div figure img{
+    max-width: 100%;
+    max-height: 100%;
+    /* border: 2px solid red; */
+}
+
+
+/* end main */
+
+.footer{
+    color: rgb(228, 213, 213);
+    background-color: #444B4C;
+}
+
+.section7 .sub-footer{
+    background-color: #D6D6D6;
+    padding: 50px;
+}
+
+.section7 .sub-footer .col-md-6{
+    text-align: center;
+}
+
+.section7 .sub-footer .footer-form input{
+    border: 3px solid #FFE019;
+    width: 50%;
+}
+
+.section7 .sub-footer .footer-form button{
+    margin-left: 10px;
+}
+
+.section7 .main-footer .nav a{
+    color: rgb(228, 213, 213); 
+    transition: all 0.5s;
+}
+
+.section7 .main-footer .nav a:hover{
+    color: #09A6B2;
+    font-weight: 600;    
+}
+
+.section7 .main-footer .from-twitter a,
+.section7 .main-footer .facebook a{
+    color: #09A6B2;
+}
+
+.section7 .main-footer .facebook button{
+    background-color: #09A6B2;
+    margin-left: 10px;
+}
+
+
+.section8 .icon{
+    padding: 10px;
+    margin: 5px;
+    font-size: 1.5em;
+    color: rgb(228, 213, 213);
+    background: #545c5d;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+
+.fa-facebook:hover{
+    background-color: #3B5998;
+}
+
+.fa-twitter:hover{
+    background-color: #4099FF;
+}
+
+.fa-rss:hover{
+    background-color: #FF8201;
+}
+
+.fa-flickr:hover{
+    background-color: #3070C8;
+}
+
+.fa-linkedin:hover{
+    background-color: #0080B1;
+}
+
+.fa-instagram:hover{
+    background-color: #EE2283;
+}
+
+.fa-skype:hover{
+    background-color: #00AFF0;
+}
+
+.fa-envelope-o:hover{
+    background-color: #C7392C;
+}
+
+
+@media screen and (max-width: 800px){
+    .section1 .nav-link a{
+        display: none;
+    }
+    
+    .section1 .nav-span {
+        display: inline-block;
+    }
+    
+    .section1 .nav-text {
+        display: none;
+    }
+    
+    .section2 .logo {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .section2 .drop-down{
+        margin-top: 20%;
+    }
+    
+    .section3 .form-group{
+        position: absolute;
+        top: -200%;
+        left: 30%;
+    }
+    
+    .section4 .carousel-inner img{
+        width: 100%;
+        height: auto;
+        }
+
+        .section6 .welcome-div{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .section5 img{
+            width: 100%;
+            height: auto;
+        }
+        .hide{
+            display: none;
+        }
+
+        .section6{
+            max-width: 55%;
+        }
+}
