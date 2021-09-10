@@ -32,7 +32,9 @@ a{
     height: fit-content;
 }
 
-.section1 .nav-link a{
+.section1 .navbar .container .row ul li i,
+.section1 .navbar .container .row ul li a
+{
     color: grey;
 }
 
@@ -106,6 +108,7 @@ a{
     padding: 0 10px;
     height: 40px;
     background-color: var(--background);
+    transition: all 0.7s;
 }
 
 .latest-btn:hover, .best-sellers-btn:hover, .manufacturers-btn:hover{
@@ -245,7 +248,7 @@ a{
     .section4 .carousel-inner img{
         width: 100%;
         height: auto;
-        }
+    }
 
         .section6 .welcome-div{
             display: flex;
@@ -259,8 +262,19 @@ a{
         .hide{
             display: none;
         }
-
+        
         .section6{
-            max-width: 55%;
+            max-width: 70%;
+            margin-left: 0;
         }
-}
+        .section7 .sub-footer .footer-form input{
+            margin-top: 15px;
+        }
+        .section7 .sub-footer .footer-form button{
+            height: fit-content;
+            margin-top: 17px;
+        }
+        .latest-btn, .best-sellers-btn, .manufacturers-btn{
+            margin-right: -80px;
+        }
+    }
